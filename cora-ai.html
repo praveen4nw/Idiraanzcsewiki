@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORA AI — Identity Security Platform Notes</title>
+<meta name="description" content="What CyberArk's CORA AI assistant does across the Idira identity security platform.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 24 24"><polygon points="12,1 22,7 22,17 12,23 2,17 2,7" fill="none" stroke="#4FD8E8" stroke-width="1.4"/><circle cx="12" cy="12" r="3" fill="#4FD8E8"/></svg></span>
+      IDIRA <span class="sub">/ platform notes</span>
+    </a>
+    <button class="navtoggle" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+    <ul class="navlinks">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="blueprint.html">Blueprint</a></li>
+      <li><a href="risk-management.html">Risk Management</a></li>
+      <li><a href="itdr.html">ITDR</a></li>
+      <li><a href="discovery-saas.html">Discovery SaaS</a></li>
+      <li><a href="ispss-whats-new.html">ISPSS — What's New</a></li>
+      <li><a href="cora-ai.html" class="active">CORA AI</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <span class="breadcrumb"><a href="index.html">Overview</a> / 06</span>
+      <span class="eyebrow" style="display:block;margin-top:16px;">Built-in Assistant</span>
+      <h1>CORA AI</h1>
+      <p class="lede">CyberArk's assistant, built into every corner of the Idira platform — talk to it the way you'd talk to a colleague, and it either answers or acts.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="num">01</span>Two things it does</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Answers questions</h3>
+          <p>Ask about specifics in your own environment — who has access to a given Safe, what's configured on a particular platform — and CORA AI answers using official Idira knowledge sources, now including CyberArk's Knowledge Base articles alongside product documentation.</p>
+        </div>
+        <div class="card">
+          <h3>Performs tasks</h3>
+          <p>Beyond answering, it can act: managing accounts and Safes, approving access requests, and retrieving platform information, in natural language rather than a specific command syntax.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="num">02</span>Where it shows up</h2>
+      <p class="section-lede" style="max-width:70ch;">
+        CORA AI is woven into ISPSS services and engines rather than bolted on as a separate tool — it's available throughout the platform, across every space and service a given user is authorized to reach. Access is role-based: a user needs at least one qualifying administrative or auditor role before CORA AI becomes available to them for a given service.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="num">03</span>Session review, automated</h2>
+      <p class="section-lede" style="max-width:70ch;">
+        One of the more concrete time-savers: instead of a human scrubbing through hours of recorded privileged sessions, CORA AI detects and highlights the most critical information on its own — and, per the ISPSS updates, now produces textual summaries and audits of SSH and RDP sessions specifically.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="num">04</span>Staying in control of it</h2>
+      <div class="feature">
+        <span class="ftitle">SETUP → AI PREFERENCES</span>
+        <span class="fbody">AI features and tools can be disabled or enabled individually from the Setup space, so teams can opt out of specific CORA AI capabilities without losing the rest of the platform's functionality.</span>
+      </div>
+      <div class="feature">
+        <span class="ftitle">ROLE-GATED ACCESS</span>
+        <span class="fbody">Because availability is tied to administrative or auditor roles, CORA AI's reach is scoped by the same access model that governs everything else on the platform — it doesn't get a separate, broader permission set.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="callout">
+        <span class="eyebrow amber">Related</span>
+        CORA AI is the interface layer on top of everything else on this site — it's how you'd typically interact with risk scores, ITDR alerts, and discovery results day to day, rather than a separate capability on its own.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <span>IDIRA / platform notes</span>
+      <nav>
+        <a href="blueprint.html">Blueprint</a>
+        <a href="risk-management.html">Risk Management</a>
+        <a href="itdr.html">ITDR</a>
+        <a href="discovery-saas.html">Discovery SaaS</a>
+        <a href="ispss-whats-new.html">What's New</a>
+        <a href="cora-ai.html">CORA AI</a>
+      </nav>
+    </div>
+    <p class="note">This site is an independent reference summarizing publicly available information about the Idira identity security platform. It is not an official Palo Alto Networks or CyberArk property. Idira, CyberArk, and CORA AI are trademarks of their respective owners.</p>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>

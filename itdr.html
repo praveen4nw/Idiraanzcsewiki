@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idira ITDR — Identity Security Platform Notes</title>
+<meta name="description" content="Identity Threat Detection and Response: what ITDR covers and how it fits alongside Idira's risk management.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 24 24"><polygon points="12,1 22,7 22,17 12,23 2,17 2,7" fill="none" stroke="#4FD8E8" stroke-width="1.4"/><circle cx="12" cy="12" r="3" fill="#4FD8E8"/></svg></span>
+      IDIRA <span class="sub">/ platform notes</span>
+    </a>
+    <button class="navtoggle" aria-expanded="false" aria-label="Toggle navigation">MENU</button>
+    <ul class="navlinks">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="blueprint.html">Blueprint</a></li>
+      <li><a href="risk-management.html">Risk Management</a></li>
+      <li><a href="itdr.html" class="active">ITDR</a></li>
+      <li><a href="discovery-saas.html">Discovery SaaS</a></li>
+      <li><a href="ispss-whats-new.html">ISPSS — What's New</a></li>
+      <li><a href="cora-ai.html">CORA AI</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="wrap">
+      <span class="breadcrumb"><a href="index.html">Overview</a> / 03</span>
+      <span class="eyebrow" style="display:block;margin-top:16px;">ITDR</span>
+      <h1>Identity Threat Detection &amp; Response</h1>
+      <p class="lede">ITDR starts from a blunt assumption: identities will eventually be compromised. Its job is to catch that fast and contain it before it spreads.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="num">01</span>The gap it fills</h2>
+      <p class="section-lede" style="max-width:70ch;">
+        Traditional identity and access management is built to authenticate and authorize — it isn't built to notice when a legitimate-looking login is actually an attacker using stolen credentials. ITDR sits on top of IAM and privileged access management to close that gap, watching for the misuse of otherwise valid access rather than trying to block access outright.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="num">02</span>What it watches for</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Credential misuse</h3>
+          <p>Logins and access patterns that don't match how an account normally behaves — impossible travel, odd hours, or access to systems it's never touched.</p>
+        </div>
+        <div class="card">
+          <h3>Privilege escalation</h3>
+          <p>An identity gaining rights beyond what its role or history would justify, often the first move after initial compromise.</p>
+        </div>
+        <div class="card">
+          <h3>Lateral movement</h3>
+          <p>An attacker hopping from one compromised account or system to the next, using legitimate credentials the whole way.</p>
+        </div>
+        <div class="card">
+          <h3>Session anomalies</h3>
+          <p>Behavior inside a privileged session — commands, file access, or data movement — that deviates from expected use for that identity or role.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="num">03</span>Detection to response</h2>
+      <ol class="pillars">
+        <li>
+          <h3>Continuous monitoring</h3>
+          <p>Telemetry is pulled from identity providers, directories, and privileged session activity so behavior can be baselined in the first place.</p>
+        </li>
+        <li>
+          <h3>Behavioral analytics</h3>
+          <p>AI and machine learning compare live activity against that baseline to surface deviations a static rule set would miss entirely.</p>
+        </li>
+        <li>
+          <h3>Automated response</h3>
+          <p>Containment actions — step-up authentication, credential rotation, session isolation, or account disablement — fire automatically based on severity, rather than waiting on a human to triage first.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="callout">
+        <span class="eyebrow amber">ITDR vs. posture management</span>
+        ITDR is the detective and responsive half of identity security. Its preventive counterpart — hardening configurations, right-sizing permissions, and removing dormant accounts before they're exploited — is what the risk management page on this site covers. The two are meant to run together, not as substitutes for each other.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <span>IDIRA / platform notes</span>
+      <nav>
+        <a href="blueprint.html">Blueprint</a>
+        <a href="risk-management.html">Risk Management</a>
+        <a href="itdr.html">ITDR</a>
+        <a href="discovery-saas.html">Discovery SaaS</a>
+        <a href="ispss-whats-new.html">What's New</a>
+        <a href="cora-ai.html">CORA AI</a>
+      </nav>
+    </div>
+    <p class="note">This site is an independent reference summarizing publicly available information about the Idira identity security platform. It is not an official Palo Alto Networks or CyberArk property. Idira, CyberArk, and CORA AI are trademarks of their respective owners.</p>
+  </div>
+</footer>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>
